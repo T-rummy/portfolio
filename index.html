@@ -1,0 +1,150 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Tanner Ruminer</title>
+</head>
+<body>
+    <header>
+       
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#nights">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </header>
+
+    <section>
+        
+        <img class="court" id="court" src="court2.png"/>
+        <div class="court hoop" id="hoop"></div>
+        <img class="mountains" id="mountains" src="mountains.jpg" />
+        <img id="apartments" src="apartments.png" />
+        
+       
+        
+        
+        
+    </section>
+
+    
+
+    <div class="sec">
+
+        <section>
+        
+  <a href="https://t-rummy.github.io/Schubert-Studio/">         
+        <div id="nights" class="ports">
+            <img class="night" id="night" src="night.png" />
+            <div class="container">
+                <div class="box">
+                    <span class="title">Schubert Studio</span>
+                    <div>
+                        <strong>Brand Design</strong>
+                        
+                    </div>
+                </div>
+            </div>
+</a>
+<a href="https://crustulum-bucket.herokuapp.com/">
+            <div class="container">
+                <div class="box">
+                    <span class="title">Crustulum Bucket</span>
+                    <div>
+                        <strong>Paste Bin</strong>
+                        
+                    </div>
+                </div>
+            </div>
+</a>
+<a href="https://t-rummy.github.io/run-buddy/">
+            <div class="container">
+                <div class="box">
+                    <span class="title">Run Buddy</span>
+                    <div>
+                        <strong>Personal Trainers</strong>
+                        
+                    </div>
+                </div>
+            </div>
+</a>
+<a href="https://github.com/T-rummy/Uncorcked"> 
+            <div class="container">
+                <div class="box">
+                    <span class="title">Uncorked</span>
+                    <div>
+                        <strong>Wine Sharing</strong>
+                        
+                    </div>
+                </div>
+            </div>
+</a>
+<a href="https://t-rummy.github.io/Runrob/">
+            <div class="container">
+                <div class="box">
+                    <span class="title">Nutri-wizzard</span>
+                    <div>
+                        <strong>Health/Fitness</strong>
+                        
+                    </div>
+                </div>
+            </div>
+</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+<!-- <div class="form">
+    <form className="home-form" method="POST" action="https://getform.io/f/0c6f19ae-9ddc-4092-8023-7355af8a4d2f">
+    
+    
+    
+        <input className='placehold ' type="text" placeholder="Name" name='name' id='name'
+            required />
+    
+    
+        <input className='placehold ' type="email" placeholder="Email" name='email'
+            id='email' required />
+    
+    
+        <textarea className='placehold ' type="text" name="message" placeholder='Message'
+            required >
+    
+        <button type="submit" 
+            className='button '>Contact</button>
+        
+    </form> -->
+
+</div>
+
+    <script>
+        let hoop = document.getElementById("hoop");
+        let night = document.getElementById("night");
+        let name = document.getElementById("name");
+        let apartments = document.getElementById("apartments");
+        let city = document.getElementById("city");
+        let mountains = document.getElementById("mountains");
+       
+
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY;
+            mountains.style.right = value + 'px';
+            apartments.style.right = value + 'px';
+            night.style.left = value + 'px';
+            hoop.style.left = value/2 + 'px';
+          
+            //  hoop.classList.add("hoop-glitch");
+
+        });
+
+      
+    </script>
+    
+</body>
+</html>
